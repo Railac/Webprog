@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input/getExample.html</title>
+</head>
+<body>
+    <form action="testExample.jsp" method="POST">
+        
+        <fieldset style="width: 300px;">
+            <legend>개인 정보 입력</legend>
+        <table>
+            <tr>
+                <td><label for="userFirstName">이름</label></td>
+                <td><input type="text" name="userFirstName"></td>
+            </tr>
+            <tr>
+                <td><label for="userLastName">성</label></td>
+                <td><input type="text" name="userLastName"></td>
+            </tr>
+            <tr>
+                <td><label for="password">비밀번호</label></td>
+                <td><input type="password" name="password" placeholder="비밀번호" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><textarea rows="5" cols="32" placeholder="텍스트 작성 공간입니다."></textarea></td>
+                
+            </tr>
+        </table>
+        
+        
+        
+        <input type="submit" value="전송">
+        <input type="reset" value="취소"><br>
+    </fieldset>
+    <h3>당신의 성별은 무엇입니까?</h3>
+    <input type="radio" name="sex" value="male" checked>남자
+    <input type="radio" name="sex" value="femail">여자
+    <h3>현재 관심을 가지고 있는 학습 주제는 무엇입니까?</h3>
+    <input type ="checkbox" name="subject" value="HTML5" checked>HTML5<br>
+    <input type ="checkbox" name="subject" value="CSS3" >CSS3<br>
+    <input type ="checkbox" name="subject" value="Javascript" >Javascript<br>
+    <input type ="checkbox" name="subject" value="Jquery" >Jquery<br>
+    <button type="button" onclick="alert('클릭-1 사용')">클릭-1</button>
+    <label>전공 분야를 입력하세요
+        <input type="text" list="majorlist" name="major">
+        <datalist id="majorlist">
+            <option value="Software">소프트웨어</option>
+            <option value="Robot">로봇</option>
+        </datalist>
+
+    </label>
+    </form>
+
+</body>
+</html>

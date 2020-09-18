@@ -1,0 +1,32 @@
+a{
+    font-size: 20px;
+    text-align: left;
+    color: blanchedalmond;   
+}
+.main{
+    width: 100%;
+}
+.menu{
+    width: 30%;
+    float: left;
+    height: 550px;
+    
+}
+.ui{
+    width:50%;
+    float: left;
+}
+
+.text{
+    color: blanchedalmond;
+}
+div{
+    background-color: black;
+    
+}
+div.right{
+    width:20%;
+    background-color: black;
+    float:left;
+    
+}

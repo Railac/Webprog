@@ -1,0 +1,38 @@
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+  .dropbtn{
+    background-color: #333;
+    padding: 16px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown {
+    overflow: hidden;
+    background-color: #333;
+  }
+  .dropdown-content {
+    background-color: #f9f9f9; /*content 배경색*/
+    display: none; /*content 안보이게 */
+    position: absolute; /*다른컨텐츠 위에 떠도 다른컨텐츠가 밀리거나하지않음!!!*/
+  }
+  .dropdown-content a {
+    color: black; /*a href text color*/
+    padding: 12px 16px; 
+    text-decoration: none; /*밑줄 제거*/
+    display: block; /*객체마다 한줄씩 내리기*/
+  }
+  .dropdown-content a:hover {background-color: #f1f1f1} /* a 에 마우스올렸을때 배경색*/
+  .dropdown:hover .dropdown-content {
+    display: block; /*버튼에 마우스 올렸을때 content 다시 보이게*/
+  }
+  .dropdown:hover .dropbtn {
+    background-color:  rgb(75, 73, 73); /*버튼에 마우스올렸을때 배경색 변환*/
+  }
+
+
