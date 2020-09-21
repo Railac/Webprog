@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cal.html</title>
+</head>
+<body>
+    <div id="showResult" style="border: 5px solid black;"></div>
+    <script>
+        
+        var today = new Date();
+        console.log(today.getFullYear());
+        console.log(today.getMonth());
+        console.log(today.getDate());
+        console.log(today.getDay());
+        console.log(new Date(2020,9,0).getDate());
+
+        var cols =['일','월','화','수','목','금','토'];
+
+        var elem = document.getElementById("showResult");
+        var tag = "<table border='1' bordercolor='red' ><tr>";
+        
+            cols.forEach(function(a,b,c){
+            if(b==6){//b가 0이아니면
+                tag += "<td bgcolor='aqua'>" + a + "</td>";
+            }else if(b){
+                tag += "<td>" + a + "</td>";
+            }
+            else{//
+                tag += "<td bgcolor='red'>" + a + "</td>";
+            }
+        });
+        var a = new Date(2020,9,0).getDate();
+       
+       console.log(a);
+       for(var i=0;i<=a;i++){
+           tag += "</tr><tr><td>" + i +"</td>";
+       }
+
+
+        tag = tag + "</tr></table>";
+
+        console.log(tag);
+        elem.innerHTML = tag;
+
+    </script>
+</body>
+</html>
